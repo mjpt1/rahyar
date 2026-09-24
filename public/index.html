@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="راه‌یار؛ رزرو امن سفرهای بین‌شهری با رانندگان تاییدشده">
+  <title>راه‌یار | سفر بین‌شهری</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="brand" href="#top"><span class="brand-mark"></span>راه‌یار</a>
+    <nav class="nav"><a href="#trips">سفرها</a><a href="#how">چطور کار می‌کند؟</a><a href="#articles">مجله</a><a href="#driver">همکاری با ما</a></nav>
+    <div class="header-actions"><button class="ghost-button" id="dashboardButton">پنل من</button><button class="login-button" id="loginButton">ورود / ثبت‌نام</button><button class="menu-button" id="menuButton">☰</button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero"><div class="wrap hero-grid">
+      <div class="hero-copy"><p class="eyebrow">سفرهای مطمئن، آدم‌های واقعی</p><h1>جاده را <em>انتخاب</em> کن،<br>ما هم‌سفر را پیدا می‌کنیم.</h1><p>رزرو آنلاین صندلی در خودروهای تاییدشده؛ با قیمت شفاف، راننده‌های امتیازدار و پشتیبانی در تمام مسیر.</p><div class="trust"><span class="trust-dots">● ● ● ●</span> بیش از ۲۸ هزار مسافر راه‌یار را انتخاب کرده‌اند.</div></div>
+      <div class="search-card"><div class="tabs"><button class="active">رزرو سفر</button><button id="driverTab">ثبت سفر به‌عنوان راننده</button></div><form id="searchForm"><div class="fields"><label>مبدا<input id="origin" value="تهران" placeholder="مثلاً تهران" required></label><label>مقصد<input id="destination" value="رشت" placeholder="مثلاً رشت" required></label><label>تاریخ حرکت<input id="travelDate" type="date" value="2026-09-25" required></label><label>مسافر<input id="passengerCount" type="number" value="1" min="1" max="8" required></label></div><button class="primary-button" type="submit">جست‌وجوی سفرها <span>←</span></button></form><small>پرداخت امن · لغو شفاف · پشتیبانی ۲۴/۷</small></div>
+    </div><div class="map-art"><span class="route-point start"></span><span class="route-point end"></span><span class="map-label start-label">تهران</span><span class="map-label end-label">رشت</span><svg viewBox="0 0 800 260" preserveAspectRatio="none"><path d="M30 210C120 254 178 102 285 158S425 237 512 130s147-50 254-98"/><path class="road" d="M0 56c126 25 154-12 266 46s178-8 274-41 154 5 260 44"/></svg><div class="live-card"><i></i><b>۱۲</b> راننده نزدیک شما</div><div class="map-stamp">مسیر محبوب این هفته</div></div></section>
+
+    <section class="wrap section" id="trips"><div class="section-head"><div><h2>سفرهای محبوب این هفته</h2><p>خودروهای تاییدشده، آماده حرکت از نزدیک‌ترین نقطه به شما</p></div><span id="resultHint" class="section-link">همه سفرها</span></div><div id="tripList" class="trip-grid"><div class="loading">در حال دریافت سفرها...</div></div><div class="stats"><div><b>۳۴۰+</b><span>مسیر فعال بین‌شهری</span></div><div><b>۴.۸/۵</b><span>میانگین رضایت مسافران</span></div><div><b>۹۲٪</b><span>رانندگان احراز هویت‌شده</span></div><div><b>۲۴/۷</b><span>پشتیبانی کنار شماست</span></div></div></section>
+
+    <section class="feature-band" id="how"><div class="wrap feature-layout"><div><p class="eyebrow coral">ساده، امن، قابل اعتماد</p><h2>هر صندلی،<br>یک انتخاب مطمئن.</h2><p>قبل از حرکت می‌دانید با چه کسی، با چه خودرویی و با چه قیمتی سفر می‌کنید.</p></div><div class="features"><article><span>⌁</span><h3>راننده‌های تاییدشده</h3><p>مدارک هویتی، گواهینامه و بیمه هر راننده بررسی می‌شود.</p></article><article><span>▦</span><h3>انتخاب صندلی دلخواه</h3><p>چیدمان واقعی خودرو را ببینید و صندلی خود را انتخاب کنید.</p></article><article><span>◉</span><h3>موقعیت زنده سفر</h3><p>پس از شروع سفر، مسیر و موقعیت خودرو را لحظه‌به‌لحظه دنبال کنید.</p></article><article><span>↺</span><h3>قوانین شفاف کنسلی</h3><p>قبل از پرداخت، میزان جریمه و شرایط بازگشت وجه روشن است.</p></article></div></div></section>
+
+    <section class="wrap driver-cta" id="driver"><div><p class="eyebrow">برای راننده‌ها</p><h2>خودرو خالی داری؟<br>هم‌سفرهای مسیرت منتظرند.</h2><p>به جمع رانندگان راه‌یار بپیوند و با امنیت بیشتر، درآمدت را مدیریت کن.</p><button class="dark-button" id="driverCta">ثبت‌نام راننده ←</button></div><div class="cta-shape">✦</div></section>
+    <section class="wrap section" id="articles"><div class="section-head"><div><h2>از مجله راه‌یار</h2><p>نکته‌هایی برای سفر بهتر و جاده‌های دوست‌داشتنی‌تر</p></div></div><div id="articleList" class="article-grid"><div class="article placeholder"></div><div class="article placeholder"></div></div></section>
+  </main>
+
+  <footer class="wrap footer"><span>© ۱۴۰۳ راه‌یار · هم‌سفر جاده‌های ایران</span><div><a href="#">قوانین استفاده</a><a href="#">حریم خصوصی</a><a href="#">تماس با ما</a></div></footer>
+
+  <div class="modal-layer" id="authModal"><div class="modal auth-modal"><button class="modal-close" data-close="authModal">×</button><div class="modal-title"><span class="brand-mark small"></span><h2>ورود به راه‌یار</h2><p>شماره موبایل خود را برای دریافت کد تایید وارد کنید.</p></div><form id="authForm"><label>نوع حساب<select id="authRole"><option value="passenger">مسافر</option><option value="driver">راننده</option></select></label><label>شماره موبایل<input id="phone" type="tel" placeholder="۰۹۱۲۱۲۳۴۵۶۷" required pattern="09[0-9]{9}"></label><div id="otpBox" class="otp-box hidden"><label>کد شش رقمی<input id="otpCode" inputmode="numeric" maxlength="6" placeholder="۱۲۳۴۵۶"></label><label>نام و نام خانوادگی<input id="fullName" placeholder="برای تکمیل حساب"></label></div><button class="primary-button" type="submit" id="authSubmit">دریافت کد تایید</button><p id="authMessage" class="form-message"></p></form></div></div>
+
+  <div class="modal-layer" id="seatModal"><div class="modal seat-modal"><button class="modal-close" data-close="seatModal">×</button><div class="modal-title align-right"><h2>انتخاب صندلی</h2><p id="seatTripTitle"></p></div><div class="seat-legend"><span><i class="free"></i> آزاد</span><span><i class="selected"></i> انتخاب شما</span><span><i class="occupied"></i> رزرو شده</span></div><div class="seat-map"><span class="steering">فرمان</span><div id="seatGrid" class="seat-grid"></div></div><div class="booking-summary"><div><small id="selectedSeatsLabel">صندلی انتخاب نشده</small><b id="selectedTotal">۰ تومان</b></div><button class="primary-button" id="reserveButton">ادامه رزرو</button></div></div></div>
+
+  <div class="modal-layer" id="dashboardModal"><div class="modal dashboard-modal"><button class="modal-close" data-close="dashboardModal">×</button><div class="dashboard-head"><div><p class="eyebrow coral">حساب کاربری</p><h2 id="dashboardTitle">پنل من</h2></div><span id="dashboardRole" class="role-pill"></span></div><div id="dashboardContent" class="dashboard-content"><div class="loading">در حال دریافت اطلاعات...</div></div></div></div>
+  <div id="toast" class="toast"></div>
+  <script src="/socket.io/socket.io.js"></script><script src="/app.js" type="module"></script>
+</body>
+</html>
